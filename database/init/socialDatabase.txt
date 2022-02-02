@@ -1,0 +1,12 @@
+CREATE TABLE publication(
+	utilisateur VARCHAR (100),
+	postid SERIAL,
+	contenu VARCHAR(10000),
+	likes INT,
+	commentaires INT,
+	PRIMARY KEY (postId) 
+);
+
+
+insert into publication(utilisateur, contenu, likes,commentaires) 
+                       values('elouane','une vie de merde', 0, 0);
